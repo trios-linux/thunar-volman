@@ -35,7 +35,7 @@ fi
 
 if [ ! -f $PKG ]; 
 then
-	wget http://archive.xfce.org/src/xfce/$NAME/1.6/$PKG
+	wget http://archive.xfce.org/src/xfce/$NAME/0.8/$PKG
 else
 	echo "$PKG exists, skipping download"
 fi
@@ -47,7 +47,7 @@ if [ "$1" = "-x" ];
 then
 	if [ ! -f $PKG ]; 
 	then
-		wget wget http://archive.xfce.org/src/xfce/$NAME/1.6/$PKG
+		wget wget http://archive.xfce.org/src/xfce/$NAME/0.8/$PKG
 	else
 		echo "$PKG exists, skipping download"
 	fi
@@ -62,7 +62,7 @@ if [ "$1" = "-x" ] && [ "$2" = "-r" ];
 then
 	if [ ! -f $PKG ]; 
 	then
-		wget wget http://archive.xfce.org/src/xfce/$NAME/1.6/$PKG
+		wget wget http://archive.xfce.org/src/xfce/$NAME/0.8/$PKG
 	else
 		echo "$PKG found, skipping download"
 	fi
@@ -77,7 +77,7 @@ if [ "$1" = "-x" ] && [ "$2" = "-m" ];
 then
 	if [ ! -f $PKG ]; 
 	then
-		wget wget http://archive.xfce.org/src/xfce/$NAME/1.6/$PKG
+		wget wget http://archive.xfce.org/src/xfce/$NAME/0.8/$PKG
 	else
 		echo "$PKG found, skipping download"
 	fi
